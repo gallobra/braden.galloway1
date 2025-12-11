@@ -1,11 +1,16 @@
 .bluecolor {
     color: rgb(94, 1, 242);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     /* Added to ensure background color fills page */
     margin: 0; 
+    /* FIXED: Ensures the page never shrinks below the size needed for your menus + video */
+    min-width: 1350px;
 }
 
 h1 {
