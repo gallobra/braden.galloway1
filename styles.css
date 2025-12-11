@@ -1,0 +1,71 @@
+.bluecolor {
+    color: rgb(94, 1, 242);
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* Added to ensure background color fills page */
+    margin: 0; 
+}
+
+h1 {
+    text-align: center;
+    margin: 0; /* Removes default margin to fit header better */
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.common {
+    position: absolute;
+}
+
+/* --- HEADER --- */
+.header {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+    z-index: 2;
+}
+
+/* --- LEFT MENU --- */
+.leftmenu {
+    top: 114px;
+    left: 5px;
+    width: 400px;
+    bottom: 39px;
+    z-index: 1;
+    padding-top: 40px;
+}
+
+/* --- RIGHT MENU --- */
+.right {
+    top: 114px;
+    right: 5px;
+    width: 400px;
+    bottom: 39px;
+    padding-left: 5px;
+}
+
+/* --- MAIN BODY --- */
+.mainbody {
+    top: 114px;
+    left: 415px; /* Clears the Left Menu */
+    right: 415px; /* FIXED: Increased to 415px to stop overlapping the Right Menu */
+    bottom: 39px;
+    padding-right: 5px;
+    
+    /* FIXED: Allows scrolling if content is too big */
+    overflow-y: auto; 
+}
+
+/* Helps images and iframes stay within the mainbody width */
+.mainbody iframe, 
+.mainbody .tableauPlaceholder {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
